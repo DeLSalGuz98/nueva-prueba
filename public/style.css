@@ -5,11 +5,17 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+.first-text{
+    font-family: 'Mirza', cursive;
+}
+.second-text{
+    font-family: 'Enriqueta', serif;
+}
 body{
     background-color: gray;
 }
 header{
-    background-color: #000;
+    background-color: #0009;
     font-size: 16px;
     padding: 1em;
     width: 100%;
@@ -28,6 +34,9 @@ header{
     text-decoration: none;
     color: #fff;
     font-size: 2em;
+}
+.logo-dota a p{
+    font-size: 1.5em;
 }
 .img-logo{
     margin: .2em;
@@ -52,19 +61,26 @@ header{
     position: absolute;
     top: 5em;
     left: 0;
-    background-color: #000;
+    background-color: #0009;
     width: 100%;
 }
 .navbar li{
     text-align: center;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 .navbar li:hover{
     background-color: #444;
+    letter-spacing: 1px;
 }
 li a{
     color: #fff;
     text-decoration: none;
     line-height: 3em;
+    font-family: 'Enriqueta', serif;
 }
 .btn-playfree{
     height: 3em;
@@ -83,10 +99,16 @@ li a{
     -ms-border-radius: .2em;
     -o-border-radius: .2em;
 }
+.play-btn:hover{
+    letter-spacing: 1px;
+}
+/*END HEADER*/
+/*TABLET*/
 @media screen and (min-width:768px){
     header{
         font-size: 20px;
     }
+    /*END HEADER*/
 }
 /*DESKTOP*/
 @media screen and (min-width:992px){
@@ -107,30 +129,35 @@ li a{
         display: none;
     }
     .navbar{
-        display: block;
+        display: flex;
         position: relative;
         top: 0;
+        background-color: transparent;
     }
     .navbar li{
         text-align: center;
+        list-style: none;
     }
     .navbar li:hover{
-        background-color: #000;
-        text-shadow: 0 0 1em #fff, 0 0 1em #fff;
+        background-color: transparent;
+        letter-spacing: 0;
     }
     li a{
-        color: #fff;
+        color: #bbb;
         text-decoration: none;
         line-height: 3em;
+    }
+    li a:hover{
+        color: #fff;
+        text-shadow: 0 0 1em #fff, 0 0 1.5em #fff, 0 0 2em #fff;
     }
     .navbar{
         display: flex;
         justify-content: right;
-        padding: 0 1em;
         width: max-content;
     }
     nav{
-        width: 500px;
+        width: 25em;
     }
     nav ul{
         display: flex;
@@ -160,5 +187,7 @@ li a{
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
+        letter-spacing: 0;
     }
+    /*END HEADER*/
 }
