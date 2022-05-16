@@ -136,6 +136,16 @@ iframe{
 }
 .section-one__text{
     font-size: 2em;
+    animation: text-one 3s ;
+    -webkit-animation: text-one 3s ;
+}
+@keyframes text-one{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: #fff;
+    }
 }
 .section-one__btn{
     font-size: 2em;
