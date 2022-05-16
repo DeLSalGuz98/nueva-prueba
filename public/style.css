@@ -25,6 +25,9 @@ header{
     align-items: center;
     position: fixed;
 }
+header:hover{
+    background-color: #000;
+}
 .logo-dota{
     width: max-content;
 }
@@ -61,7 +64,7 @@ header{
     position: absolute;
     top: 5em;
     left: 0;
-    background-color: #0009;
+    background-color: #000;
     width: 100%;
 }
 .navbar li{
@@ -98,17 +101,87 @@ li a{
     -moz-border-radius: .2em;
     -ms-border-radius: .2em;
     -o-border-radius: .2em;
+    cursor: pointer;
 }
 .play-btn:hover{
     letter-spacing: 1px;
 }
 /*END HEADER*/
+.section-one{
+    font-size: 16px;
+    height: 100vh;
+    background-image: url('./IMG/secone-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6em;
+}
+iframe{
+    width: 90%;
+    height: 90%;
+}
+.section-one__content{
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section-one__text{
+    font-size: 2em;
+}
+.section-one__btn{
+    font-size: 2em;
+}
 /*TABLET*/
+@media screen and (max-width:290px){
+    .section-one__content{
+        padding-top: 0;
+    }
+    .section-one__text{
+        font-size: 1.5em;
+    }
+    .section-one__btn{
+        font-size: 1em;
+    }
+}
 @media screen and (min-width:768px){
     header{
         font-size: 20px;
     }
     /*END HEADER*/
+    .section-one{
+        font-size: 20px;
+    }
+    .video-container{
+        padding-top: 5.1em;
+    }
+    iframe{
+        width: 60%;
+        height: 100%;
+    }
+    .section-one__content{
+        padding: 3em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-one__text{
+        width: min-content;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .section-one__btn-container{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
 }
 /*DESKTOP*/
 @media screen and (min-width:992px){
@@ -180,6 +253,7 @@ li a{
         -moz-transition: .5s;
         -ms-transition: .5s;
         -o-transition: .5s;
+        cursor: pointer;
     }
     .play-btn:hover{
         transform: scale(1.1);
@@ -190,4 +264,27 @@ li a{
         letter-spacing: 0;
     }
     /*END HEADER*/
+    .section-one{
+        font-size: 16px;
+    }
+    .video-container{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-top: 5.2em;
+        padding-right: 3em;
+    }
+    iframe{
+        width: 40%;
+        height: 100%;
+    }
+    .section-one__text{
+        width: 10em;
+        font-size: 3.4em;
+        line-height: 2.7rem;
+        letter-spacing: 2px;
+    }
+    .section-one__btn-container{
+        align-items: center;
+    }
 }
