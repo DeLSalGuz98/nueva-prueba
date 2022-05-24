@@ -14,8 +14,21 @@
 .third-text{
     font-family: 'Expletus Sans', cursive;
 }
-body{
-    background-color: gray;
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 1px;
+    background-color: #000;
+}
+body::-webkit-scrollbar-thumb{
+    width: 1px;
+    background-color: #E94625;
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
 }
 header{
     background-color: #0009;
@@ -309,7 +322,7 @@ section{
 }
 .bg--heros{
     background-image: url(./IMG/bg-heros.jpg);
-    background-size: cover;
+    background-size: 110% 100%;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -354,6 +367,66 @@ section{
     width: 100%;
     height: 100%;
     padding: 2em 1em;
+}
+/*SECTION FIVE*/
+.section-five{
+    font-size: 16px;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.five-conatiner{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(300deg, #000 0%, #0001 50%, #0001 100%);
+}
+.five-btn-conatiner{
+    height: max-content;
+    padding: 2em 0;
+}
+/*FOOTER*/
+footer{
+    font-size: 16px;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.logo-footer, .text-footer{
+    width: 100%;
+}
+.logo-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-container{
+    width: 6em;
+    height: 6em;
+}
+.valvelogo-footer{
+    background-image: url(./IMG/Valve_logo.png);
+}
+.dotalogo-footer{
+    background-image: url(./IMG/dota-logo.png);
+}
+.valvelogo-footer, .dotalogo-footer{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.text-footer{
+    display: block;
+    color: #bbb;
+    padding: 2rem;
+    text-align: center;
 }
 /*FOLD*/
 @media screen and (max-width:290px){
@@ -433,7 +506,12 @@ section{
     .bg-poster{
         height: 40em;
     }
-    
+    .section-five{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width:769px){
     .text-square{
@@ -524,13 +602,12 @@ section{
         font-size: 13px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
     .more-options li a{
         line-height: 1.5em;
     }
     .play-btn{
-        margin-left: 1em;
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -633,5 +710,18 @@ section{
     }
     .bg-poster{
         height: 60em;
+    }
+    .five-conatiner{
+        font-size: 16px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        font-size: 16px;
+    }
+    .logo-footer, .text-footer{
+        width: 50%;
+        margin: 0 auto;
     }
 }

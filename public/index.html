@@ -23,7 +23,7 @@
 <body>
     <header>
         <div class="logo-dota">
-            <a href="#">
+            <a href="#home">
                 <img class="img-logo" src="./IMG/logoDota.png" alt="logo_dota">
                 <p class="first-text">DOTA 2</p>
             </a>
@@ -36,10 +36,10 @@
             <div class="navbar">
                 <nav>
                     <ul>
-                        <li><a href="#">JUEGO</a></li>
-                        <li><a href="#">HEROES</a></li>
-                        <li><a href="#">NOTICIAS</a></li>
-                        <li><a href="#">E-SPORTS</a></li>
+                        <li><a href="#game">JUEGO</a></li>
+                        <li><a href="#heros">HEROES</a></li>
+                        <li><a href="#news">NOTICIAS</a></li>
+                        <li><a href="#e-sport">E-SPORTS</a></li>
                     </ul>
                 </nav>
                 <div class="more-options">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section class="section-one">
+    <section id="home" class="section-one">
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/onu4zb6rhHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-    <div class="news-container bg--paralax">
+    <div id="news" class="news-container bg--paralax">
         <div class="card-container radius-class">
             <img class="card--img radius-class" src="./IMG/news-one.png" alt="news-one">
             <div class="card--text-container radius-class">
@@ -99,7 +99,7 @@
         </div>
     </section>
     <div class="bg-poster"></div>
-    <section class="section-three">
+    <section id="heros" class="section-three">
         <div class="bg--paralax text-heros">
             <div class="text--container">
                 <p class="text--titleone second-text">UNETE A LA</p>
@@ -113,7 +113,7 @@
         </div>
         <div class="bg--heros"></div>
     </section>
-    <section class="section-four">
+    <section id="e-sport" class="section-four">
         <div class="part-one">
             <div class="part--head"></div>
             <div class="part--foot"></div>
@@ -130,9 +130,26 @@
             </div>
         </div>
     </section>
-    <section class="bg--paralax">
-
+    <section id="game" class="section-five bg--paralax">
+        <div class="five-conatiner radius-class">
+            <p class="text--titleone second-text">ÚNETE</p>
+            <h3 class="text--titletwo third-text">A LA BATALLA</h3>
+            <div class="five-btn-conatiner">
+                <a class="section-one__btn play-btn first-text" href="#"><i class="fa-brands fa-steam"></i> Juega Gratis</a>
+            </div>
+        </div>
     </section>
+    <footer>
+        <div class="logo-footer">
+            <div class="img-container valvelogo-footer">
+            </div>
+            <div class="img-container dotalogo-footer">
+            </div>
+        </div>
+        <div class="text-footer">
+            <p class="second-text">Dota y el logotipo de Dota son marcas comerciales y/o marcas comerciales registradas de Valve Corporation. 2022 Valve Corporation, todos los derechos reservados</p>
+        </div>
+    </footer>
     <script src="./code.js"></script>
 </body>
 </html>
